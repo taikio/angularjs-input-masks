@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body ng-app="myApp">
+
+    <div ng-controller="MainController as vm">
+
+        <input type="text" ng-model="vm.inputValue" inputs-cpf />
+        <h4>{{vm.inputValue}}</h4>
+    </div>
+
+    <script src="angular.min.js"></script>
+    <script src="angular-sanitize.min.js"></script>
+    <script src="angular-touch.min.js"></script>
+    <script src="main.controller.js"></script>
+    <script src="inputs.cpf.directive.js"></script>
+</body>
+</html>
